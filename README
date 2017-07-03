@@ -5,7 +5,7 @@
  $ repo sync
 
 # Build for Raspberry Pi3
- https://github.com/emertxe-github/device_brcm_rpi3
+ https://github.com/emertxe-github/brcm_rpi3_nougat_tablet
 
 Use -j[n] option on sync & build steps, if build host has a good number of CPU cores.
 
