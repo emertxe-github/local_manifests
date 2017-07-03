@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <remote name="arpi" fetch="https://github.com/emertxe-github"/>
-
+  
+  <remove-project name="frameworks/native/opengl/libs/EGL"/>
+  <project path="frameworks/native/opengl/libs/EGL" name="frameworks_native_opengl_libs_EGL" revision="master" remote="arpi"/>
+  <remove-project name="frameworks/base/opengl/java/android"/>
+  <project path="frameworks/base/opengl/java/android" name="frameworks_base_opengl_java_android" revision="master" remote="arpi"/>
+  
   <remove-project name="platform/external/mesa3d"/>
   <project path="external/mesa3d" name="external_mesa3d" revision="nougat" remote="arpi"/>
   <remove-project name="platform/external/drm_gralloc"/>
@@ -11,10 +16,7 @@
   <project path="hardware/rpi" name="hardware_rpi" revision="nougat" remote="arpi"/>
   <project path="device/brcm/rpi3" name="brcm_rpi3_nougat_tablet" revision="master" remote="arpi"/>
   
-  <remove-project name="frameworks/native/opengl/libs/EGL"/>
-  <project path="frameworks/native/opengl/libs/EGL" name="frameworks_native_opengl_libs_EGL" revision="master" remote="arpi"/>
-  <remove-project name="frameworks/base/opengl/java/android"/>
-  <project path="frameworks/base/opengl/java/android" name="frameworks_base_opengl_java_android" revision="master" remote="arpi"/>
+  
    
   <remove-project name="device/google/dragon-kernel" />
   <remove-project name="device/htc/flounder-kernel" />
