@@ -9,10 +9,7 @@
 
   <project path="kernel/rpi" name="kernel_rpi" revision="nougat" remote="arpi"/>
   <project path="hardware/rpi" name="hardware_rpi" revision="nougat" remote="arpi"/>
-  <project path="device/brcm/rpi3" name="brcm_rpi3_nougat_tablet" revision="master" remote="arpi"/>
-  
-  <project path="frameworks/native/opengl/libs/EGL" name="frameworks_native_opengl_libs_EGL" revision="master" remote="arpi"/>
-  <project path="frameworks/base/opengl/java/android" name="frameworks_base_opengl_java_android" revision="master" remote="arpi"/>
+  <project path="device/brcm/rpi3" name="brcm_rpi3_nougat_tablet" revision="master" remote="arpi"/
    
   <remove-project name="device/google/dragon-kernel" />
   <remove-project name="device/htc/flounder-kernel" />
