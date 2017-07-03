@@ -9,7 +9,7 @@
 
   <project path="kernel/rpi" name="kernel_rpi" revision="nougat" remote="arpi"/>
   <project path="hardware/rpi" name="hardware_rpi" revision="nougat" remote="arpi"/>
-  <project path="device/brcm/rpi3" name="device_brcm_rpi3" revision="nougat" remote="arpi"/>
+  <project path="device/brcm/rpi3" name="brcm_rpi3_nougat_tablet" revision="nougat" remote="arpi"/>
 
   <remove-project name="device/google/dragon-kernel" />
   <remove-project name="device/htc/flounder-kernel" />
