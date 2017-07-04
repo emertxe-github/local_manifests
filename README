@@ -5,6 +5,19 @@
  $ repo sync
 
 # Build for Raspberry Pi3
+ #Add to patch first
+ $ PROJECT_DIR=$(pwd)
+ $ cd frameworks/native/opengl/libs/
+ $ git clone https://github.com/emertxe-github/frameworks_native_opengl_libs_EGL.git
+ $ rm -rf EGL
+ $ mv frameworks_native_opengl_libs_EGL EGL
+ $ cd $PROJECT_DIR
+ $ cd frameworks/base/opengl/java
+ $ git clone https://github.com/emertxe-github/frameworks_base_opengl_java_android.git
+ $ rm -rf android
+ $ mv frameworks_base_opengl_java_android android
+ $ cd $PROJECT_DIR
+ # patched done go to next step 
  https://github.com/emertxe-github/brcm_rpi3_nougat_tablet
 
 Use -j[n] option on sync & build steps, if build host has a good number of CPU cores.
